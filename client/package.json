@@ -1,0 +1,26 @@
+{
+  "name": "pixel-arcade",
+  "version": "1.0.0",
+  "description": "",
+  "main": "../deploy/html/index.html",
+  "scripts": {
+    "dev": "webpack --config webpack.dev.config.js --mode development && webpack-dev-server --config webpack.dev.config.js --mode development",
+    "build": "webpack --mode production --progress --colors"
+  },
+  "author": "xackery",
+  "license": "ISC",
+  "devDependencies": {
+    "expose-loader": "^0.7.5",
+    "phaser": "3.11.0",
+    "ts-loader": "^4.4.2",
+    "typescript": "^3.0.1"
+  },
+  "dependencies": {
+    "@types/bytebuffer": "^5.0.37",
+    "@types/ws": "^5.1.2",
+    "bytebuffer": "^5.0.1",
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  }
+}
