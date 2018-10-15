@@ -1,0 +1,11 @@
+@font-face {
+	font-family: "ReturnofGanon";
+	font-style: normal;
+	font-weight: 400;
+	src: url("../fonts/ReturnofGanon.ttf");
+}
+.fontLoader {
+    position: absolute;
+    left: -1000px;
+    visibility: hidden;
+ }

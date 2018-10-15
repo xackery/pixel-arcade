@@ -1,4 +1,4 @@
-import { Model } from "../model/model";
+import { CONST } from "../model/const";
 
 export class BootScene extends Phaser.Scene {
     constructor() {
@@ -7,7 +7,7 @@ export class BootScene extends Phaser.Scene {
       });
     }
     preload(): void {
-      this.load.spritesheet("GEMS", "assets/sprites/diamonds32x5.png", Model.GEM_SIZE, Model.GEM_SIZE)
+      //this.load.spritesheet("GEMS", "assets/sprites/diamonds32x5.png", CONST.GEM_SIZE, CONST.GEM_SIZE)
     }
 
     update(): void {

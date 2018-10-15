@@ -1,8 +1,8 @@
-import { Player } from "../objects/player";
+//import { Player } from "../objects/player";
 import { ScaleModes } from "phaser";
 import { Game } from "../game";
 import { GlobalManager } from "../managers/globalManager";
-
+ 
 enum Direction { 
   Center = 0,
   Up,
@@ -16,6 +16,7 @@ enum Direction {
 }
 
 export class GameScene extends Phaser.Scene {
+  /*
   private layers: Phaser.Tilemaps.DynamicTilemapLayer[];
   private cameraX: number = 0;
   private cameraY: number = 0;
@@ -45,10 +46,10 @@ export class GameScene extends Phaser.Scene {
 
 
   create(): void {
-    /*this.input.on('dragstart', this.onDragStart);
+    this.input.on('dragstart', this.onDragStart);
     this.input.on('drag', this.onDrag);
     this.input.on('dragend', this.onDragEnd);
-    */
+
     this.SetCameraPosition(0,0);
     this.layers = new Array();
 
@@ -164,7 +165,7 @@ export class GameScene extends Phaser.Scene {
 */
 
   update(): void {
-    
+    /*
     let player = GlobalManager.Player.GetCurrentPlayer();
 	this.idTxt.setText("ID: "+player.GetName()+" (online: "+GlobalManager.Player.PlayerCount()+")");
 	
@@ -226,9 +227,6 @@ export class GameScene extends Phaser.Scene {
     if (player.Controller.DeltaX != 0 || player.Controller.DeltaY != 0) {      
       player.SetPositionXY(worldX, worldY);      
     }
-   /* if (this.asteroids.length === 0) {
-      this.scene.start("MainMenuScene");
-	}*/
 
 	GlobalManager.Game.SetWorldXY(worldX, worldY)
 	
@@ -244,4 +242,6 @@ export class GameScene extends Phaser.Scene {
 
     return rndPos;
   }
+  */
+ }
 }

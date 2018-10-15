@@ -11,19 +11,16 @@ export class MainMenuScene extends Phaser.Scene {
     });
   }
 
-  init(): void {
+  init(): void { 
     this.startKey = this.input.keyboard.addKey(
       Phaser.Input.Keyboard.KeyCodes.S
     );
 
     // reset score, highscore and player lives
-    if (CONST.SCORE > CONST.HIGHSCORE) {
-      CONST.HIGHSCORE = CONST.SCORE;
+    if (GlobalManager.ScoreRead() > GlobalManager.HighScoreRead()) {
+      GlobalManager.HighScoreUpdate(GlobalManager.ScoreRead())
     }
-    CONST.SCORE = 0;
-    CONST.LIVES = 3;
-
-
+    GlobalManager.ScoreUpdate(0)
   }
 
   preload(): void {
@@ -50,7 +47,7 @@ export class MainMenuScene extends Phaser.Scene {
     let logoTxt = this.add.text(
       this.sys.canvas.width / 2,
       this.sys.canvas.height / 2 - 60,
-      "Survive RPG"
+      "Pixel Arcade"
     );
     logoTxt.setAlign("center")
     logoTxt.setFont("ReturnofGanon");
@@ -103,8 +100,8 @@ export class MainMenuScene extends Phaser.Scene {
   }
 
   update(): void {
-    this.scene.start("GameScene");
-    return;
+    //this.scene.start("GameScene");
+    //return;
     
     if (this.startKey.isDown) {
       this.scene.start("GameScene");

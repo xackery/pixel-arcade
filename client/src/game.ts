@@ -10,7 +10,7 @@ var instance:Game;
 export class Game extends Phaser.Game { 
   constructor(config: GameConfig) {    
     super(config);
-  }
+  } 
 }
 
 
@@ -19,7 +19,7 @@ export function createGame() {
     
     GlobalManager.Initialize(); 
     let config:GameConfig = {        
-        title: "Survive RPG",
+        title: "Pixel Arcade",
         url: "https://surviverpg.com",
         version: "1.0",
         width: GlobalManager.GetScreenWidth(),
