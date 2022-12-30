@@ -12,15 +12,15 @@
   "devDependencies": {
     "expose-loader": "^0.7.5",
     "phaser": "3.11.0",
-    "ts-loader": "^4.4.2",
+    "ts-loader": "^9.4.2",
     "typescript": "^3.0.1"
   },
   "dependencies": {
     "@types/bytebuffer": "^5.0.37",
     "@types/ws": "^5.1.2",
     "bytebuffer": "^5.0.1",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^3.11.0"
   }
 }
